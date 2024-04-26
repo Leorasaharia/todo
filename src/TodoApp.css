@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    190deg,
+    rgb(186, 175, 250) 0%,
+    rgb(231, 139, 248) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #000000;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.todo-app {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #e1ebfd;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+.todo-input {
+  display: flex;
+  margin-bottom: 20px;
+  outline: none;
+  border: 2px solid rgb(167, 165, 186);
+  border-radius: 5px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f4e9ef;
+}
+
+.todo-input button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #929ec8;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.todo-input button:hover {
+  background-color: #887b96;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #a1a2cd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.todo-list li:hover {
+  background-color: #c1aee0;
+}
+
+.todo-list li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-list li button {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  color: #6a5353;
+}
+
+.todo-list li button:hover {
+  color: #6a3636;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #9d9df1; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-buttons button.active {
+  background-color: #7c7cd6; 
+}
+
+.filter-buttons button:hover {
+  background-color: #807fc6;
+}
+
+.journal-entry-container {
+  background-color: #fff1f1;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.journal-entry-container h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.journal-entry-container textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #d3a0a0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow-wrap: break-word; 
+}
+
+.save-journal-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffb6b6;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.save-journal-button:hover {
+  background-color: #f6a6a6;
+}
+
+.journal-entries-container {
+  background-color: #dbc3b2;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.journal-entries-container h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.journal-entries-container ul {
+  list-style:inside;
+  padding: 0;
+}
+
+.journal-entries-container li {
+  font-size: 12px;
+  margin-bottom: 1px;
+  overflow-wrap: break-word; 
+}
